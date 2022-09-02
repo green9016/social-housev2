@@ -1,0 +1,116 @@
+// new code
+.btn-gray-back{
+    background-color: #a6a6a6;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    min-width: 140px;
+    width: auto;
+    border: none;
+}
+.btn-black-back{
+    background-color: #000000;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    min-width: 140px;
+    width: auto;
+    border: none;
+}
+.border-round{
+    border: none;
+    border-radius: 30px;
+}
+.font-dm{
+    font-family: "DMSans";
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+.font-times{
+    font-family: "TimesNewRoman";
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+.font-bold{
+    font-weight: bold!important;
+}
+.font-15px{
+    font-size: 15px;
+}
+.font-20px{
+    font-size: 20px;
+}
+.font-228px{
+    font-size: 22.8px;
+}
+.font-25px{
+    font-size: 25px;
+}
+.font-277px{
+    font-size: 27.7px;
+}
+.font-30px{
+    font-size: 30px;
+}
+.font-325px{
+    font-size: 32.5px;
+}
+.font-45px{
+    font-size: 45px;
+}
+.font-50px{
+    font-size: 50px;
+}
+
+.line-height-45px{
+    line-height: 45px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .font-15px{
+        font-size: 12px;
+    }
+    .font-20px{
+        font-size: 18px;
+    }
+    .font-228px{
+        font-size: 20px;
+    }
+    .font-25px{
+        font-size: 22px;
+    }
+    .font-277px{
+        font-size: 24px;
+    }
+    .font-30px{
+        font-size: 26px;
+    }
+    .font-325px{
+        font-size: 29px;
+    }
+    .font-45px{
+        font-size: 38px;
+    }
+    .font-50px{
+        font-size: 42px;
+    }
+    .btn-gray-back{
+        font-size: 14px;
+    }
+    .btn-black-back{
+        font-size: 14px;
+    }
+}

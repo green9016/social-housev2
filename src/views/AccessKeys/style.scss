@@ -1,0 +1,38 @@
+.access-keys{
+  padding-top: 80px;
+}
+.green-key{
+  background: #ddffd1;
+}
+.gold-key{
+  background: #fffbce;
+}
+.rose-gold-key{
+  background: #ffe2d7;
+}
+.platinum-key{
+  background: #eaeaea;
+}
+.black-key{
+  background: #b6b3b3;
+}
+
+.access-key-img{
+  text-align: right;
+}
+.access-key-img img{
+  width: 250px;
+}
+.access-key-item ul li{
+  font-family: DMSans;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .access-key-item ul li{
+    font-size: 18px;
+  }
+}
