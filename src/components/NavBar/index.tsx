@@ -30,7 +30,7 @@ const NavBar: FC = () => {
                     <ul className={active}>
                         <li className='d-none d-md-flex'><Link to="/#home-page" className="link">SOCIAL HOUSE</Link></li>
                         <li><Link to="/#home-page" className="link">About</Link></li>
-                        <li><Link to="/#access-keys" className="link">Access Keys</Link></li>
+                        <li><Link to="/access-keys" className="link">Access Keys</Link></li>
                         <li><Link to="/#roadmap" className="link">Our Team</Link></li>
 
                         <li className='d-flex d-md-none'><Link onClick={onClickBuyNow} className="link" to='#'>BUY NOW</Link></li>

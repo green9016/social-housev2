@@ -1,7 +1,7 @@
 import {FC} from 'react'
 import './style.scss'
 import KeyCard from "./KeyCard";
-
+import NavBar from '../../components/NavBar';
 import card_1 from "../../assets/images/s.png";
 import card_2 from "../../assets/images/s(1).png";
 import card_3 from "../../assets/images/s(2).png";
@@ -166,31 +166,35 @@ let items = [
     }
 ];
 
-const Root: FC = () => {
+const AccessKeys: FC = () => {
 
     return (
-        <section className="container access-keys" id="access-keys">
-            <div className={'row'}>
-                <h1 className='font-times font-50px'>Access Keys</h1>
-                <div className={'col-md-10 col-12'}>
-                    <p className='font-dm font-20px'>Our access keys are minted at random. Each purchase grants you ownership of one of the following keys, distributed randomly. </p>
+        <>
+            <NavBar/>
+            <section className="container access-keys" id="access-keys">
+                <div className={'row'}>
+                    <h1 className='font-times font-50px'>Access Keys</h1>
+                    <div className={'col-md-10 col-12'}>
+                        <p className='font-dm font-20px'>Our access keys are minted at random. Each purchase grants you ownership of one of the following keys, distributed randomly. </p>
+                    </div>
                 </div>
-            </div>
 
-            <div className={'row'}>
-                {items.map((item, index) =>
-                    <KeyCard key={index} {...item}/>
-                )}
-            </div>
+                <div className={'row'}>
+                    {items.map((item, index) =>
+                        <KeyCard key={index} {...item}/>
+                    )}
+                </div>
 
 
-            <div className='row mt-5'>
-                <p className={'text-center font-dm font-20px mb-0'}>*Events and club access will be run</p>
-                <p className={'text-center font-dm font-20px'}>through an RSVP system*</p>
-            </div>
+                <div className='row mt-5'>
+                    <p className={'text-center font-dm font-20px mb-0'}>*Events and club access will be run</p>
+                    <p className={'text-center font-dm font-20px'}>through an RSVP system*</p>
+                </div>
 
-        </section>
+            </section>
+        </>
+        
     )
 }
 
-export default Root
+export default AccessKeys
