@@ -22,7 +22,9 @@ button{
 #root {
     min-height: 100%;
 }
-
+input, textarea{
+    font-family: 'OpenSans';
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -46,7 +48,7 @@ label:focus,
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
-    font-family: "OpenSans";
+    //font-family: "OpenSans";
 }
 
 input:-webkit-autofill,

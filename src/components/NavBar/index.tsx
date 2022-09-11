@@ -1,9 +1,13 @@
 import {FC, useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import './style.scss'
+import JoinNowModal from "../JoinNowModal";
+import WaitListModal from "../WaitListModal";
 
 const NavBar: FC = () => {
     const [active, setActive] = useState("active");
+    const [modalOpen, setModalOpen] = useState(false);
+    const [waitlistShow, setWaitListShow] = useState(false);
 
     const onClickNav = () =>{
         if(active === "active")
@@ -15,34 +19,31 @@ const NavBar: FC = () => {
         }
     }
 
-    const onClickBuyNow = () =>{
-        console.log('clicked buy now');
+    const onClickWaitList = () =>{
+        setModalOpen(false);
+        setWaitListShow(true);
     }
 
-    const onClickJoinWaitList = () =>{
-        console.log('clicked join waitlist');
-    }
+    
+    // const [modalWaitListOpen, setWaitListModalOpen] = useState(false);
 
     return (
         <header className={"main-nav"}>
             <div className='container header-div'>
                 <nav className="links d-md-flex">
-                    <ul className={active}>
+                    <ul className={`ps-0 ${active}`}>
                         <li className='d-none d-md-flex'><Link to="/#home-page" className="link">SOCIAL HOUSE</Link></li>
                         <li><Link to="/#home-page" className="link">About</Link></li>
                         <li><Link to="/access-keys" className="link">Access Keys</Link></li>
-                        <li><Link to="/#roadmap" className="link">Our Team</Link></li>
+                        <li><Link to="/our-team" className="link">Our Team</Link></li>
 
-                        <li className='d-flex d-md-none'><Link onClick={onClickBuyNow} className="link" to='#'>BUY NOW</Link></li>
-                        <li className='d-flex d-md-none'><Link onClick={onClickJoinWaitList} className="link" to='#'>JOIN WAITLIST</Link></li>
+                        {/*<li className='d-flex d-md-none'><Link onClick={onClickBuyNow} className="link" to='#'>BUY NOW</Link></li>*/}
+                        <li className='d-flex d-md-none'><Link onClick={()=>{setModalOpen(true)}} className="link" to='#'>JOIN NOW</Link></li>
                     </ul>
                 </nav>
                 <div className='d-none d-md-flex'>
-                    <button onClick={onClickBuyNow} className='btn-gray-back border-round me-3'>
-                        BUY NOW
-                    </button>
-                    <button onClick={onClickJoinWaitList} className='btn-black-back border-round'>
-                        JOIN WAITLIST
+                    <button onClick={()=>{setModalOpen(true)}} className='btn-black-back border-round'>
+                        JOIN NOW
                     </button>
                 </div>
 
@@ -55,7 +56,9 @@ const NavBar: FC = () => {
                 </div>
 
             </div>
-
+            {modalOpen && <JoinNowModal setOpenModal={setModalOpen} waitlistEvent = {onClickWaitList}/>}
+            {waitlistShow && <WaitListModal setOpenModal={setWaitListShow}/>}
+            {/*{modalWaitListOpen && <WaitListModal setOpenModal={setWaitListModalOpen} />}*/}
         </header>
         
     )

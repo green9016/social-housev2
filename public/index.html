@@ -10,6 +10,10 @@
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1-rc.2/web3.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script id="creatify_script" src="https://sandbox.nftpay.xyz/libs/iframe_inject.js?contract_uuid=92ab0feb-ec12-42c8-8e9f-d863691cb2e6"></script>
+
     <title>Social House</title>
   </head>
   <body>
@@ -26,4 +30,30 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+    function sendEmail(Subject, Body, To) {
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "support@thesocialhouse.io",
+        Password : "64C936F983FA85E7F9BF1B76E3B1843E408C",
+        Port: 2525,
+        To : To,
+        From : "dan@thesocialhouse.io",
+        Subject : Subject,
+        Body : Body
+      }).then(
+
+              message => {
+                if(message === 'OK')
+                {
+                  alert("Thank you for joining our waitlist. A team member will be in touch when memberships become available.")
+                }
+                else{
+                  alert(message)
+                }
+              }
+      );
+    }
+  </script>
 </html>
