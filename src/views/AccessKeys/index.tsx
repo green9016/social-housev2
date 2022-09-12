@@ -1,5 +1,7 @@
-import {FC} from 'react'
+import {FC, useState} from 'react'
 import './style.scss'
+import JoinNowModal from "../../components/JoinNowModal";
+import WaitListModal from "../../components/WaitListModal";
 import KeyCard from "./KeyCard";
 import NavBar from '../../components/NavBar';
 import card_1 from "../../assets/images/s.png";
@@ -168,9 +170,19 @@ let items = [
 
 const AccessKeys: FC = () => {
 
+    const [modalOpen, setModalOpen] = useState(false);
+    const [waitlistShow, setWaitListShow] = useState(false);
+    
+    const onClickWaitList = () =>{
+        setModalOpen(false);
+        setWaitListShow(true);
+    }
+
     return (
         <>
-            <NavBar/>
+            {modalOpen && <JoinNowModal setOpenModal={setModalOpen} waitlistEvent = {onClickWaitList}/>}
+            {waitlistShow && <WaitListModal setOpenModal={setWaitListShow}/>}
+            <NavBar setOpenModal={setModalOpen}/>
             <section className="container access-keys" id="access-keys">
                 <div className={'row'}>
                     <h1 className='font-times font-50px'>Access Keys</h1>

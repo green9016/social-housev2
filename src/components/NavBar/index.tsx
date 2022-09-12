@@ -1,14 +1,12 @@
 import {FC, useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import './style.scss'
-import JoinNowModal from "../JoinNowModal";
-import WaitListModal from "../WaitListModal";
+interface IJoinNow{
+    setOpenModal: any;
+}
 
-const NavBar: FC = () => {
-    const [active, setActive] = useState("active");
-    const [modalOpen, setModalOpen] = useState(false);
-    const [waitlistShow, setWaitListShow] = useState(false);
-
+const NavBar: FC<IJoinNow> = ({setOpenModal}) => {
+    const [active, setActive] = useState("active");    
     const onClickNav = () =>{
         if(active === "active")
         {
@@ -18,14 +16,7 @@ const NavBar: FC = () => {
             setActive("active");
         }
     }
-
-    const onClickWaitList = () =>{
-        setModalOpen(false);
-        setWaitListShow(true);
-    }
-
     
-    // const [modalWaitListOpen, setWaitListModalOpen] = useState(false);
 
     return (
         <header className={"main-nav"}>
@@ -38,11 +29,11 @@ const NavBar: FC = () => {
                         <li><Link to="/our-team" className="link">Our Team</Link></li>
 
                         {/*<li className='d-flex d-md-none'><Link onClick={onClickBuyNow} className="link" to='#'>BUY NOW</Link></li>*/}
-                        <li className='d-flex d-md-none'><Link onClick={()=>{setModalOpen(true)}} className="link" to='#'>JOIN NOW</Link></li>
+                        <li className='d-flex d-md-none'><Link onClick={()=>{setOpenModal(true)}} className="link" to='#'>JOIN NOW</Link></li>
                     </ul>
                 </nav>
                 <div className='d-none d-md-flex'>
-                    <button onClick={()=>{setModalOpen(true)}} className='btn-black-back border-round'>
+                    <button onClick={()=>{setOpenModal(true)}} className='btn-black-back border-round'>
                         JOIN NOW
                     </button>
                 </div>
@@ -55,10 +46,7 @@ const NavBar: FC = () => {
                     <button className="toggle-nav w-auto" onClick={onClickNav}>&#9776;</button>
                 </div>
 
-            </div>
-            {modalOpen && <JoinNowModal setOpenModal={setModalOpen} waitlistEvent = {onClickWaitList}/>}
-            {waitlistShow && <WaitListModal setOpenModal={setWaitListShow}/>}
-            {/*{modalWaitListOpen && <WaitListModal setOpenModal={setWaitListModalOpen} />}*/}
+            </div>            
         </header>
         
     )

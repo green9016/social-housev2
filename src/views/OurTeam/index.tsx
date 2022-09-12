@@ -1,6 +1,8 @@
-import {FC} from 'react'
+import {FC, useState} from 'react'
 import './style.scss'
 import TeamCard from "./TeamCard";
+import JoinNowModal from "../../components/JoinNowModal";
+import WaitListModal from "../../components/WaitListModal";
 import NavBar from '../../components/NavBar';
 import person_1 from "../../assets/images/person1.png";
 import person_2 from "../../assets/images/person2.png";
@@ -166,9 +168,19 @@ let additional = [
 ];
 const OurTeam: FC = () => {
 
+    const [modalOpen, setModalOpen] = useState(false);
+    const [waitlistShow, setWaitListShow] = useState(false);
+    
+    const onClickWaitList = () =>{
+        setModalOpen(false);
+        setWaitListShow(true);
+    }
+
     return (
         <>
-            <NavBar/>
+            {modalOpen && <JoinNowModal setOpenModal={setModalOpen} waitlistEvent = {onClickWaitList}/>}
+            {waitlistShow && <WaitListModal setOpenModal={setWaitListShow}/>}
+            <NavBar setOpenModal={setModalOpen}/>
             <section className="container our-team" id="our-team">
                 <div className={'row'}>
                     <h1 className='font-times font-50px'>Our Team</h1>

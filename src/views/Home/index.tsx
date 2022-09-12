@@ -3,7 +3,11 @@ import './style.scss'
 import {ReactComponent as Logo} from '../../assets/images/logo_home.svg';
 import HorizonImg from '../../assets/images/s(6).png';
 
-const Home: FC = () => {
+interface IJoinNow{
+    setOpenModal: any;
+}
+
+const Home: FC<IJoinNow>= ({setOpenModal}) => {
 
     return (
         <section id='home-page' className='container home-page'>
@@ -49,7 +53,7 @@ const Home: FC = () => {
                     <p className='me-5 font-45px line-height-45px w-auto m-w-100'>Join the Social House</p>
                     <div className='w-auto'>
                         <button className='btn-gray-back me-3'>BUY NOW</button>
-                        <button className='btn-black-back'>JOIN WAITLIST</button>
+                        <button className='btn-black-back' onClick={setOpenModal}>JOIN WAITLIST</button>
                     </div>
                 </div>
                 <div className={'row mx-0 mt-3'}>
