@@ -18,55 +18,67 @@ import {FaDiscord, FaInstagram, FaTwitter} from "react-icons/all";
 let items_1 = [
     {
         title: "Vendome",
-        img: img_1
+        img: img_1,
+        link: 'https://www.vendome.miami/'
     },
     {
         title: "SLS Hyde Beach",
-        img: img_2
+        img: img_2,
+        link: 'https://www.sbe.com/nightlife/hyde/hyde-beach?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb'
     },
     {
         title: "Mr.Jones",
-        img: img_3
+        img: img_3,
+        link: 'https://www.clubbable.com/Miami/Mr-Jones-Venue#:~:text=Mr.,occupied%20by%20the%20Set%20nightclub'
     },
     {
         title: "Swan",
-        img: img_4
+        img: img_4,
+        link: 'https://swanbevy.com/'
     }
 ];
 let items_2 = [
     {
         title: "Monarch Rooftop",
-        img: img_5
+        img: img_5,
+        link: 'https://www.monarchrooftop.com/'
     },
     {
         title: "Paradise Club",
-        img: img_6
+        img: img_6,
+        link: 'https://theparadiseclubnyc.com/'
     },
     {
         title: "The Delancey",
-        img: img_7
+        img: img_7,
+        link: 'https://thedelancey.com/'
     },
     {
         title: "Lavo",
-        img: img_8
+        img: img_8,
+        link: 'https://taogroup.com/venues/lavo-italian-restaurant-new-york/'
     }
 ];
 let items_3 = [
     {
         title: "Capri Southampton",
-        img: img_9
+        img: img_9,
+        link: 'https://www.caprisouthampton.com/'
     },
     {
         title: "AM Southampton",
-        img: img_10
+        img: img_10,
+        link: 'https://www.southamptonsocialclub.com/'
     },
     {
         title: "Buddha Bar",
-        img: img_11
+        img: img_11,
+        link: 'https://instagram.com/buddhahampton?igshid=YmMyMTA2M2Y='
     },
     {
         title: "Pilo's Beach Club",
-        img: img_12
+        img: img_12,
+        link: 'https://www.pilosbeachclub.com/'
     }
 ];
 

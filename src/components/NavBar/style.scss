@@ -38,7 +38,7 @@
             font-family: "DMSans";
             font-style: normal;
             font-weight: 400;
-            font-size: 21.3px;
+            // font-size: 21.3px;
         }
     }
     .toggle-nav {
@@ -55,6 +55,73 @@
 
 .cursor-pointer{
     cursor: pointer;
+}
+
+@media (min-width: 576px) { 
+    .main-nav{
+        .links{
+            .link{
+                font-size: 14px;
+            }
+        }
+        .toggle-nav {
+            font-size:16px;
+        }
+    }
+    .m-logo{
+        font-size: 17.3px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .main-nav{
+        .links{
+            .link{
+                font-size: 15px;
+            }
+        }
+        .toggle-nav {
+            font-size:17px;
+        }
+    }
+    .m-logo{
+        font-size: 18.3px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  
+    .main-nav{
+        .links{
+            .link{
+                font-size: 16px;
+            }
+        }
+        .toggle-nav {
+            font-size:18px;
+        }
+    }
+    .m-logo{
+        font-size: 19.3px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .main-nav{
+        .links{
+            .link{
+                font-size: 18px;
+            }
+        }
+        .toggle-nav {
+            font-size:20px;
+        }
+    }
+    .m-logo{
+        font-size: 21.3px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -85,7 +152,7 @@
             }
             .link{
                 color: #ffffff;
-                font-size: 18px;
+                //font-size: 18px;
             }
         }
         
@@ -137,7 +204,7 @@
             background:#303030;
             text-shadow:0px 1px 0px rgba(0,0,0,0.5);
             color:#777;
-            font-size:20px;
+            // font-size:20px;
             transition:color linear 0.15s;
         }
     
@@ -154,6 +221,6 @@
         font-family: "DMSans";
         font-style: normal;
         font-weight: 400;
-        font-size: 21.3px;
+        // font-size: 21.3px;
     }
 }
