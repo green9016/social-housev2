@@ -1,6 +1,7 @@
 import {FC, useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import './style.scss'
+
 interface IJoinNow{
     setOpenModal: any;
 }

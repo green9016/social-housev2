@@ -17,7 +17,33 @@ const WaitListModal: FC<IProps> = ({ setOpenModal }) => {
     const [name, setName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [message, setMessage] = useState('');
+
+    const isValidEmail = (email:string)  => {
+        return /\S+@\S+\.\S+/.test(email);
+      }
+
     const onClickSubmit = async () =>{
+
+        if(name.trim() === '')
+        {
+            alert(`Please input the name`)
+            return;
+        }
+        else if(emailAddress.trim() === '')
+        {
+            alert(`Please input the email address`)
+            return;
+        }
+        else if(message.trim() === '')
+        {
+            alert(`Please input the message`)
+            return;
+        }
+        else if(!isValidEmail(emailAddress))
+        {
+            alert(`Please check your email. This is not email format.`)
+            return;
+        }
 
         setOpenModal(false);
         msg.html = `<div style="display: block">
