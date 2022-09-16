@@ -23,9 +23,19 @@
 }
 
 .modalContainer .title {
-  display: inline-block;
+  display: flex;
   margin-top: 10px;
 }
+
+.modalContainer .title .title-desc {
+  display: flex;
+}
+
+.modalContainer .title p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .modal-logo{
   width: 60px;
   height: auto;

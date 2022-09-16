@@ -18,9 +18,9 @@ const JoinNowModal: FC<IProps> = ({ setOpenModal, waitlistEvent }) => {
                 >X</button>
                 <div className="title">
                     <img className='modal-logo' alt="access" src={Logo}></img>
-                    <span className='font-times font-20px'>Purchase is currently unavailable.</span>
+                    <div className='font-times font-20px title-desc'><span>Purchase is currently</span><p>&nbsp;unavailable</p></div>                    
                 </div>
-                <div className="body d-block">
+                <div className="body d-block m-t-10">
                     <div className="row">
                         <p className='font-20px text-start'>Access keys will be available for purchase in waves. Each wave will be active for 72 hours, during which time you can purchase an access key for the following price:</p>
                     </div>

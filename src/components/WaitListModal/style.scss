@@ -22,7 +22,8 @@
 }
 
 .modalContainer .title {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-top: 10px;
 }
 .modal-logo{
