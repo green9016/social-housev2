@@ -18,7 +18,7 @@ const JoinNowModal: FC<IProps> = ({ setOpenModal, waitlistEvent }) => {
                 >X</button>
                 <div className="title">
                     <img className='modal-logo' alt="access" src={Logo}></img>
-                    <div className='font-times font-20px title-desc'><span>Purchase is currently</span><p>&nbsp;unavailable</p></div>                    
+                    <div className='font-times font-20px title-desc'>Purchase is currently unavailable</div>                    
                 </div>
                 <div className="body d-block m-t-10">
                     <div className="row">
