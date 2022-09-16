@@ -26,8 +26,8 @@ const NavBar: FC<IJoinNow> = ({setOpenModal}) => {
                     <ul className={`ps-0 ${active}`}>
                         <li className='d-none d-md-flex'><Link to="/#home-page" className="link">SOCIAL HOUSE</Link></li>
                         <li><Link to="/#home-page" className="link">About</Link></li>
-                        <li><Link to="/access-keys" className="link">Access Keys</Link></li>
-                        <li><Link to="/our-team" className="link">Our Team</Link></li>
+                        <li><Link to="/access-keys/#access-keys" className="link">Access Keys</Link></li>
+                        <li><Link to="/our-team/#our-team" className="link">Our Team</Link></li>
 
                         {/*<li className='d-flex d-md-none'><Link onClick={onClickBuyNow} className="link" to='#'>BUY NOW</Link></li>*/}
                         <li className='d-flex d-md-none'><Link onClick={()=>{setOpenModal(true)}} className="link" to='#'>JOIN NOW</Link></li>

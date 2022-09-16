@@ -185,7 +185,7 @@ const AccessKeys: FC = () => {
             <NavBar setOpenModal={setModalOpen}/>
             <section className="container access-keys" id="access-keys">
                 <div className={'row'}>
-                    <h1 className='font-times font-50px'>Access Keys</h1>
+                    <h1 className='font-times font-45px'>Access Keys</h1>
                     <div className={'col-md-10 col-12'}>
                         <p className='font-dm font-20px'>Our access keys are minted at random. Each purchase grants you ownership of one of the following keys, distributed randomly. </p>
                     </div>

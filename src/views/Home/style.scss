@@ -5,8 +5,11 @@
 .logo{
     width: 200px;
 }
+.link:hover{
+    color: white;
+}
 .logo-text{
-    font-size: 54px;
+    font-size: 45px;
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-style: normal;
@@ -31,7 +34,7 @@
 
 @media screen and (max-width: 767px){
     .logo-text{
-        font-size: 30px;
+        font-size: 32px;
     }
     .home-description{
         padding-top: 30px;

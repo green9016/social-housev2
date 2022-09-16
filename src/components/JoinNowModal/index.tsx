@@ -27,20 +27,20 @@ const JoinNowModal: FC<IProps> = ({ setOpenModal, waitlistEvent }) => {
                     <div className={'row'}>
                         <div className={'col-md-12'}>
                             <p className='font-dm font-20px text-start'>
-                                <span className='font-bold'>Wave 1</span>
-                                <span> - $1000</span>
+                                <span className='font-bold'>Wave 1 - </span>
+                                <span>$1000</span>
                             </p>
                         </div>
                         <div className={'col-md-12'}>
                             <p className={'font-dm font-20px text-start'}>
-                                <span className='font-bold'>Wave 1</span>
-                                <span> - $1000</span>
+                                <span className='font-bold'>Wave 2 - </span>
+                                <span>$2500</span>
                             </p>
                         </div>
                         <div className={'col-md-12'}>
                             <p className={'font-dm font-20px text-start'}>
-                                <span className='font-bold'>Wave 1</span>
-                                <span> - $1000</span>
+                                <span className='font-bold'>Wave 3 + - </span>
+                                <span>$5000</span>
                             </p>
                         </div>
                     </div>

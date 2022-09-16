@@ -89,7 +89,7 @@ const VenusList: FC = () => {
               <div className={'row'}>
                   <h1 className='font-times font-45px'>Venues</h1>
                   <div className={'col-md-10 col-12'}>
-                      <p className='font-dm font-15px'>We partnered with major hospitality groups, each with their own unique set of networks, to bring our members free access to some of the best clubs, hotels, bars, and restaurants on the East Coast. </p>
+                      <p className='font-dm font-20px'>We partnered with major hospitality groups, each with their own unique set of networks, to bring our members free access to some of the best clubs, hotels, bars, and restaurants on the East Coast. </p>
                   </div>
               </div>
 

@@ -1,6 +1,7 @@
 import  { FC} from 'react'
 import './style.scss'
 import {ReactComponent as Logo} from '../../assets/images/logo_home.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 import HorizonImg from '../../assets/images/s(6).png';
 
 interface IJoinNow{
@@ -37,12 +38,12 @@ const Home: FC<IJoinNow>= ({setOpenModal}) => {
 
             <div className={'row'}>
                 <h1 className={'m-auto text-center font-45px'}>What Makes The Social House Different?</h1>
-                <h4 className={'m-auto text-center font-30px'}>Unlike traditional clubs, our memberships are <span className='font-bold'>transferrable</span>. Stored on the blockchain, our member access keys become an asset that you can sell or transfer at any time.</h4>
+                <h4 className={'text-center font-25px m-t-10'}>Unlike traditional clubs, our memberships are <span className='font-bold'>transferrable</span>. Stored on the blockchain, our member access keys become an asset that you can sell or transfer at any time.</h4>
             </div>
 
             <div className={'horizon-part'}>
-                <h2 className='text-center font-dm font-325px'>ON THE HORIZON</h2>
-                <p className='text-center font-228px px-5'>In addition to providing our members free access to some of the best venues and events on the East Coast, we will soon be opening a Social House physical location. </p>
+                <h2 className='text-center font-dm font-30px'>ON THE HORIZON</h2>
+                <p className='text-center font-25px px-5'>In addition to providing our members free access to some of the best venues and events on the East Coast, we will soon be opening a Social House physical location. </p>
                 <div className={'row'}>
                     <img className={'w-100'} alt="horz" src={HorizonImg}></img>
                 </div>
@@ -58,12 +59,13 @@ const Home: FC<IJoinNow>= ({setOpenModal}) => {
                 </div>
                 <div className={'row mx-0 mt-3'}>
                     <div className={'col-md-10 col-12'}>
-                        <p className='font-277px'>Our various access keys offer a wide array of benefits. Learn more about enrollment and explore our full list of perks here:</p>
+                        <p className='font-25px'>Our various access keys offer a wide array of benefits. Learn more about enrollment and explore our full list of perks here:</p>
                     </div>
                 </div>
                 <div className={'row mx-0 mt-3'}>
                     <div className={'col-md-10 col-12'}>
-                        <button className='btn-black-back border-round py-3 m-py-2'>Explore Access Keys</button>
+                        {/* <button className='btn-black-back border-round py-3 m-py-2'>Explore Access Keys</button> */}
+                        <Link className='btn-black-back border-round py-3 m-py-2 link' to="/access-keys/#access-keys">Explore Access Keys</Link>
                     </div>
                 </div>
 

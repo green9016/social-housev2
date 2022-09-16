@@ -183,7 +183,7 @@ const OurTeam: FC = () => {
             <NavBar setOpenModal={setModalOpen}/>
             <section className="container our-team" id="our-team">
                 <div className={'row'}>
-                    <h1 className='font-times font-50px'>Our Team</h1>
+                    <h1 className='font-times font-45px'>Our Team</h1>
                     <div className={'col-md-10 col-12'}>
                         <p className='font-dm font-20px'>Our team is dedicated to solidifying new partnerships and expanding our networks, all to invest in the ways YOU want to see The Social House grow.</p>
                     </div>
