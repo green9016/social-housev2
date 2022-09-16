@@ -99,3 +99,11 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .modal-logo{
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+  }
+}
