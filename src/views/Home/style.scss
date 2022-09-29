@@ -32,6 +32,10 @@
     display: block;
 }
 
+.m-custom-align{
+    text-align: center;
+}
+
 @media screen and (max-width: 767px){
     .logo-text{
         font-size: 32px;
@@ -42,5 +46,8 @@
     }
     .horizon-part{
         margin-top: 50px;
+    }
+    .m-custom-align{
+        text-align: left;
     }
 }

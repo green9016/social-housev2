@@ -37,13 +37,13 @@ const Home: FC<IJoinNow>= ({setOpenModal}) => {
             </div>
 
             <div className={'row'}>
-                <h1 className={'m-auto text-center font-30px'}>What Makes The Social House Different?</h1>
-                <h4 className={'text-center font-dm font-20px m-t-10'}>Unlike traditional clubs, our memberships are <span className='font-bold'>transferrable</span>. Stored on the blockchain, our member access keys become an asset that you can sell or transfer at any time.</h4>
+                <p className={'font-30px m-custom-align'}>What Makes The Social House Different?</p>
+                <p className={'font-dm font-20px m-custom-align'}>Unlike traditional clubs, our memberships are <span className='font-bold'>transferrable</span>. Stored on the blockchain, our member access keys become an asset that you can sell or transfer at any time.</p>
             </div>
 
             <div className={'horizon-part'}>
-                <h2 className='text-center font-dm font-30px'>ON THE HORIZON</h2>
-                <p className='text-center font-dm font-20px px-5'>In addition to providing our members free access to some of the best venues and events on the East Coast, we will soon be opening a Social House physical location. </p>
+                <p className='font-30px m-custom-align'>ON THE HORIZON</p>
+                <p className='font-dm font-20px m-custom-align'>In addition to providing our members free access to some of the best venues and events on the East Coast, we will soon be opening a Social House physical location. </p>
                 <div className={'row'}>
                     <img className={'w-100'} alt="horz" src={HorizonImg}></img>
                 </div>
