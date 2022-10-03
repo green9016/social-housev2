@@ -1,0 +1,109 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  //background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContainer {
+  width: 700px;
+  height: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  position: relative;
+}
+
+.modalContainer .title {
+  display: flex;
+  margin-top: 10px;
+}
+
+.modalContainer .title .title-desc {
+  display: flex;
+}
+
+.modalContainer .title p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.modal-logo{
+  width: 60px;
+  height: auto;
+  margin-right: 50px;
+}
+.title h3{
+  color: black;
+  -webkit-text-fill-color: black;
+  text-transform: none;
+}
+
+.titleCloseBtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+//.modalContainer .body {
+//  flex: 50%;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  font-size: 1.7rem;
+//  text-align: center;
+//  background: transparent!important;
+//}
+
+//.modalContainer .footer {
+//  flex: 20%;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.form-group{
+  margin-bottom: 10px;
+}
+.form-control.custom{
+  border: none;
+  border-bottom: 1px solid #999999;
+  padding-left: 0;
+  border-radius: 0;
+}
+.btn-black-round{
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-logo{
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+  }
+}

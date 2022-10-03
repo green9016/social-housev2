@@ -23,8 +23,8 @@ export const mint = async (provider, signer) => {
 
     const gasPrice = await provider.getGasPrice();
 
-    await contract.connect(signer).mint({value: nftCost, gasPrice: gasPrice, gasLimit: 21000});
-    
+    const tx = await contract.connect(signer).mint({value: nftCost, gasPrice: gasPrice, gasLimit: 21000});
+    await tx.wait()
     
     // tx.send({from: account, value: nftCost, gasPrice: gasPrice, gas: parseInt(gasCost * 2)}) // previous gasPrice = 2000000000
     // .on("receipt", receipt => {

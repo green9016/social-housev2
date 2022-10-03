@@ -1,14 +1,17 @@
-import  { FC} from 'react'
-import './style.scss'
-import {ReactComponent as Logo} from '../../assets/images/logo_home.svg';
+import  { FC, useState} from 'react'
+import { ReactComponent as Logo } from '../../assets/images/logo_home.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 import HorizonImg from '../../assets/images/s(6).png';
-
+import './style.scss'
 interface IJoinNow{
     setOpenModal: any;
+    setCheckoutModalOpen: any;
 }
+const Home: FC<IJoinNow>= ({setOpenModal, setCheckoutModalOpen}) => {
 
-const Home: FC<IJoinNow>= ({setOpenModal}) => {
+    const onClickBuyNow = () => {
+        setCheckoutModalOpen(true)
+    }
 
     return (
         <section id='home-page' className='container home-page'>
@@ -53,7 +56,7 @@ const Home: FC<IJoinNow>= ({setOpenModal}) => {
                 <div className={'row mx-0 d-block d-md-flex'}>
                     <p className='me-5 font-45px line-height-45px w-auto m-w-100'>Join the Social House</p>
                     <div className='w-auto'>
-                        <button className='btn-gray-back me-3'>BUY NOW</button>
+                        <button className='btn-gray-back me-3' onClick={onClickBuyNow}>BUY NOW</button>
                         <button className='btn-black-back' onClick={setOpenModal}>JOIN WAITLIST</button>
                     </div>
                 </div>
@@ -70,7 +73,6 @@ const Home: FC<IJoinNow>= ({setOpenModal}) => {
                 </div>
 
             </div>
-
         </section>
     )
 }

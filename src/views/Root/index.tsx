@@ -7,9 +7,11 @@ import JoinNowModal from "../../components/JoinNowModal";
 import WaitListModal from "../../components/WaitListModal";
 
 import './style.scss'
+import CheckoutModal from '../../components/CheckoutModal';
 const Root: FC = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [waitlistShow, setWaitListShow] = useState(false);
+    const [checkoutModalOpen, setCheckoutModalOpen] = useState(false);
     
     const onClickWaitList = () =>{
         setModalOpen(false);
@@ -20,8 +22,9 @@ const Root: FC = () => {
         <div className="main-root">
             {modalOpen && <JoinNowModal setOpenModal={setModalOpen} waitlistEvent = {onClickWaitList}/>}
             {waitlistShow && <WaitListModal setOpenModal={setWaitListShow}/>}
+            {checkoutModalOpen && <CheckoutModal setCheckoutModalOpen={setCheckoutModalOpen}/>}
             <NavBar setOpenModal={setModalOpen}/>
-            <Home setOpenModal={setModalOpen}/>
+            <Home setOpenModal={setModalOpen} setCheckoutModalOpen={setCheckoutModalOpen}/>
             <VenusList/>
             
         </div>
