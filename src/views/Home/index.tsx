@@ -56,7 +56,7 @@ const Home: FC<IJoinNow>= ({setOpenModal, setCheckoutModalOpen}) => {
                 <div className={'row mx-0 d-block d-md-flex'}>
                     <p className='me-5 font-45px line-height-45px w-auto m-w-100'>Join the Social House</p>
                     <div className='w-auto'>
-                        <button className='btn-gray-back me-3' onClick={onClickBuyNow}>BUY NOW</button>
+                        <button className='btn-black-back me-3' onClick={onClickBuyNow}>BUY NOW</button>
                         <button className='btn-black-back' onClick={setOpenModal}>JOIN WAITLIST</button>
                     </div>
                 </div>

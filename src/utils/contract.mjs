@@ -1,16 +1,15 @@
 import ethers from "ethers";
 import SHAbi from "../assets/social-abi.json";
 
-export const CHAIN = (process.env.IS_TEST ? process.env.TEST_CHAIN_ID : process.env.MAIN_CHAIN_ID) || "4";
+export const CHAIN = (process.env.IS_TEST ? process.env.TEST_CHAIN_ID : process.env.MAIN_CHAIN_ID) || "5";
 export const NETWORK_NAMES = {
     "1": "Ethereum",
-    "4": "rinkeby"
+    "5": "goerli"
 }
 const contracInfo = {
     abi: SHAbi,
     address: {
-        "3": "0x23d030fae7bB88E514Ab76d3419104D6472D75e6",
-        "4": "0x6E7A8Ce0987961C3ae52dEe9275CFe90cBF85df8"
+        "5": "0x051Bf9370BE74B4a05ef39D1D0517801C2579eeA"
     }
 }
 
