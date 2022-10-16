@@ -3,6 +3,7 @@ const CONTRACT_ID = 'dcf4d482-93f7-4f1c-8112-58e7c6065d1b'
 const PAPER_API_KEY = process.env.PAPER_API_KEY || 'd36b2479-3b90-4987-b94e-84b49fe094a2'
 const EXPIRES_IN_MINS = 15
 
+export const CHECKOUT_SHAREABLE_LINK = 'https://paper.xyz/checkout/875bef5a-ccb7-4dab-83cd-278194feea13'
 export const getPaperSdkClientSecret = async ({
   walletAddress,
   email,
