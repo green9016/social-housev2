@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { CHECKOUT_SHAREABLE_LINK } from '../../utils/paper.mjs';
-import "@paperxyz/react-client-sdk/dist/index.css";
+// import "@paperxyz/react-client-sdk/dist/index.css";
 import './style.scss'
 
 interface IProps{
@@ -16,7 +16,7 @@ const CheckoutModal: FC<IProps> = ({ setCheckoutModalOpen }) => {
                         setCheckoutModalOpen(false);
                     }}
                 >X</button>
-                <iframe src={CHECKOUT_SHAREABLE_LINK} width="100%" height="600px"></iframe>
+                <iframe src={CHECKOUT_SHAREABLE_LINK} width="100%" height="600px" allow="payment"></iframe>
             </div>
         </div>
     );
