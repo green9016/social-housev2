@@ -10,7 +10,7 @@ interface IProps{
 const CheckoutModal: FC<IProps> = ({ setCheckoutModalOpen }) => {
     return (
         <div className="modalBackground">
-            <div className="modalContainer">
+            <div className="checkout-modalContainer">
                 <button className="titleCloseBtn"
                     onClick={() => {
                         setCheckoutModalOpen(false);
